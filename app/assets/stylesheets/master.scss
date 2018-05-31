@@ -1,15 +1,44 @@
 @import "bootstrap";
 
+.btn {
+  border-radius: 0;
+}
 
+.frosty{
+  background: rgba(0,0,0,0.5);
+  padding: 10px 10px;
+
+
+}
+
+.frosty h1 {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
+
+.frosty h2 {
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 200;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
+}
 
 .hero {
-  backgound: asset-url('');
+  background: asset-url('roberta-sorge-125543-unsplash.jpg') no-repeat center center fixed ;
+  -webkit-background-size: cover;
+  -moz-background-size: cover; 
+  -o-background-size: cover;
+  background-size: cover;
+  height: 370px;
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
 .navbar {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
   box-shadow: 0px 1px 3px #2a2a2a;
-  background: asset-url('cheap_diagonal_fabric.png');
+  background: asset-url('notebook_@2X.png');
 }
 
 .navbar-inverse a.navbar-brand {
@@ -18,6 +47,7 @@
   color: blue;
 }
 
-h1 {
-  
+h1, h2, h3, h4, h5, h6, .navbar {
+  margin: 0;
 }
+
