@@ -43,6 +43,14 @@ padding: 10px;
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
+.help-block {
+  color: #ff3333;
+  background-color: #ffeeee;
+  border-radius: 3px;
+  padding: 2px 8px 2px 8px;
+  margin: 10px;
+}
+
 .hero {
   background: asset-url('roberta-sorge-125543-unsplash.jpg') no-repeat center center fixed ;
   -webkit-background-size: cover;
