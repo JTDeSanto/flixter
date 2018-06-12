@@ -45,7 +45,12 @@
   <%= link_to 'Preview as Student...', course_path(current_course), class: 'btn btn-warning float-right' %>
   <br class="clr" />
   <div class="text-center">
-    <%= link_to 'Add a new section...', new_instructor_course_section_path(current_course), class: 'btn btn-primary btn-long' %>
+    <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newSectionModal">
+        Add New Section
+      </button>
+
+    
   </div>
   <ul class="sections">
     <% current_course.sections.rank(:row_order).each do |section| %>
@@ -83,4 +88,31 @@
       </li>
     <% end %>
   </ul>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="newSectionModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="newSectionModal">Add a new Section</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div><%= simple_form_for @section, url: instructor_course_sections_path(current_course) do |f| %>
+      <div class="modal-body">
+        <%= f.input :title %>
+        <br />
+        <br />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <%= f.submit "Add a section", class: 'btn btn-primary' %>
+        <br />
+      </div>
+      <% end %>
+    </div>
+  </div>
 </div>
