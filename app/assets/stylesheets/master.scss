@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import "font-awesome";
 
 
 .booyah-box {
@@ -21,6 +22,10 @@ padding: 10px;
 
 .clr {
   clear: both;
+}
+
+.fa-ellipsis-v {
+  
 }
 
 .feature {
@@ -83,6 +88,24 @@ padding: 10px;
   font-size: 25px;
 }
 
+.lessons li {
+  background: black;
+  color: white;
+  margin: 10px;
+  font-family: "Helvetica Neue", Helvetica;
+  font-weight: 100;
+  padding: 8px;
+  font-size: 15px;
+}
+
+.lessons li b {
+  font-size: 25px;
+}
+
+.lessons li p {
+  margin: 0;
+}
+
 .navbar {
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 200;
@@ -102,6 +125,13 @@ padding: 10px;
   padding: 20px;
 }
 
+.section-li {
+  border: 1px solid;
+  border-color: #e4e4e4 #bebebd #bebebd #e4e4e4;
+  padding: 20px;
+  margin: 20px;
+}
+
 body {
   background: asset-url('dust_scratches.png');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
@@ -110,5 +140,17 @@ body {
 
 h1, h2, h3, h4, h5, h6, .navbar {
   margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul .header {
+  font-size:  25px;
+}
+
+ul .header .fa {
+  font-size: 20px;
 }
 
