@@ -1,0 +1,20 @@
+<br />
+
+<div class="booyah-box col-10 offset-1 team">
+  <h1>Team</h1>
+  <p>Our team of instructors will show you how!</p>
+  <div class="row">
+    
+
+    <% @user.each do |u| %>
+      <% @course.each do |c| %>
+      <% if u.id == c.user_id %>
+      <div class="col-4 offset-1">
+      <h3><%= u.first_name %>  <%= u.last_name %></h3>
+      
+      </div>
+      <% end %>
+      <% end %>
+    <% end %>
+  </div>
+</div>

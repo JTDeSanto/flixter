@@ -132,6 +132,11 @@ padding: 10px;
   margin: 20px;
 }
 
+.team h1 h4{
+  font-family: "Helvetica Neue", Helvetica;
+  
+}
+
 body {
   background: asset-url('dust_scratches.png');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
@@ -140,6 +145,11 @@ body {
 
 h1, h2, h3, h4, h5, h6, .navbar {
   margin: 0;
+}
+
+.dashboard h1 {
+  color: white;
+  font-weight: 200;
 }
 
 ul {
